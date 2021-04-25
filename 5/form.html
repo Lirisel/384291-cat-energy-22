@@ -40,8 +40,10 @@
       <div class="selection-program">
         <div class="selection-program__wrapper">
           <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
           <!--Форма-->
           <form class="selection-program__contact-form" method="post" name="contact_form" action="https://echo.htmlacademy.ru">
+
             <!--Форма - основной блок-->
               <p>
                 <label class="selection-program__form-item" for="username">ИМЯ:*</label>
@@ -55,9 +57,10 @@
                 <label class="selection-program__form-item" for="age">Возраст (лет):</label>
                 <input id="age" type="text" name="age" placeholder="7">
               </p>
+
               <!--Форма - блок с радио-->
               <fieldset class="selection-program__radio-list">
-                <legend class="visually-hidden">Выбор программы</legend>
+                <h2 class="visually-hidden">Выбор программы</h2>
                 <ul>
                   <li class="selection-program__radio">
                     <input class="visually-hidden selection-program__input" type="radio" name="slimming" id="slimming" checked>
@@ -73,10 +76,10 @@
                   </li>
                 </ul>
               </fieldset>
-              <!--Форма - контактные данные-->
 
+              <!--Форма - контактные данные-->
               <fieldset class="selection-program__contact-details">
-                <legend>Контактные данные (владельца кота)</legend>
+                <h2>Контактные данные (владельца кота)</h2>
                 <p>
                   <label class="selection-program__form-item" for="e-mail">E-mail:*</label>
                   <input id="e-mail" type="text" name="e-mail" placeholder="кuklachev@gmail.com">
@@ -89,17 +92,19 @@
                 </p>
               </fieldset>
               <span>удалить</span>
+
               <!--Форма - комментарий-->
               <fieldset class="selection-program__comment">
-                <legend>Комментарий</legend>
+                <h2>Комментарий</h2>
                 <p>
                   <label for="comment-text"></label>
                   <textarea id="comment-text" name="comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </p>
               </fieldset>
+
               <!--Форма - дополнительные данные-->
               <fieldset class="selection-program__checkbox-list">
-                <legend>Дополнительно</legend>
+                <h2>Дополнительно</h2>
                 <ul>
                   <li class="selection-program__checkbox">
                     <input class="visually-hidden selection-program__input" type="checkbox" name="sweetener" id="filter-sweetener" checked>
@@ -122,6 +127,7 @@
                 <p>* — Обязательные поля</p>
               </fieldset>
           </form>
+
           <!--Контактные данные и схема проезда-->
           <div class="contacts">
             <div class="contacts__wrapper">
