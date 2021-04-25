@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/384291-cat-energy-22/5/">
+</head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="34" height="39" alt="Cat energy">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1>Подбор программы</h1>
+      <div class="selection-program">
+        <div class="selection-program__wrapper">
+          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <!--Форма-->
+          <form class="selection-program__contact-form" method="post" name="contact_form" action="https://echo.htmlacademy.ru">
+            <!--Форма - основной блок-->
+              <p>
+                <label class="selection-program__form-item" for="username">ИМЯ:*</label>
+                <input id="username" type="text" name="username" placeholder="барсик">
+              </p>
+              <p>
+                <label class="selection-program__form-item" for="weight">Вес (кг):*</label>
+                <input id="weight" type="text" name="weight" placeholder="7">
+              </p>
+              <p>
+                <label class="selection-program__form-item" for="age">Возраст (лет):</label>
+                <input id="age" type="text" name="age" placeholder="7">
+              </p>
+              <!--Форма - блок с радио-->
+              <fieldset class="selection-program__radio-list">
+                <legend class="visually-hidden">Выбор программы</legend>
+                <ul>
+                  <li class="selection-program__radio">
+                    <input class="visually-hidden selection-program__input" type="radio" name="slimming" id="slimming" checked>
+                    <label for="slimming">похудение</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden selection-program__input" type="radio" name="weight-gain" id="weight-gain">
+                    <label for="weight-gain">Набор массы</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden selection-program__input" type="radio" name="do-not-know" id="do-not-know">
+                    <label for="do-not-know">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!--Форма - контактные данные-->
+
+              <fieldset class="selection-program__contact-details">
+                <legend>Контактные данные (владельца кота)</legend>
+                <p>
+                  <label class="selection-program__form-item" for="e-mail">E-mail:*</label>
+                  <input id="e-mail" type="text" name="e-mail" placeholder="кuklachev@gmail.com">
+                  <img src="../source/img/icon_email.svg" alt="" width="18" height="13">
+                </p>
+                <p>
+                  <label class="selection-program__form-item" for="phone">Телефон:*</label>
+                  <input id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+                  <img src="../source/img/icon-phone.svg" alt="" width="20" height="20">
+                </p>
+              </fieldset>
+              <span>удалить</span>
+              <!--Форма - комментарий-->
+              <fieldset class="selection-program__comment">
+                <legend>Комментарий</legend>
+                <p>
+                  <label for="comment-text"></label>
+                  <textarea id="comment-text" name="comment-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </p>
+              </fieldset>
+              <!--Форма - дополнительные данные-->
+              <fieldset class="selection-program__checkbox-list">
+                <legend>Дополнительно</legend>
+                <ul>
+                  <li class="selection-program__checkbox">
+                    <input class="visually-hidden selection-program__input" type="checkbox" name="sweetener" id="filter-sweetener" checked>
+                    <label for="filter-sweetener">сахарозаменитель</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden selection-program__input" type="checkbox" name="drinking-water" id="filter-drinking-water">
+                    <label for="filter-drinking-water">питьевая вода</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden selection-program__input" type="checkbox" name="milk" id="filter-milk">
+                    <label for="filter-milk">молоко</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden selection-program__input" type="checkbox" name="vitamins" id="filter-vitamins">
+                    <label for="filter-vitamins">витамины</label>
+                  </li>
+                </ul>
+                <a class="button selection-program__button" href="#">отправить заявку</a>
+                <p>* — Обязательные поля</p>
+              </fieldset>
+          </form>
+          <!--Контактные данные и схема проезда-->
+          <div class="contacts">
+            <div class="contacts__wrapper">
+              <div class="contacts__info">
+                <div class="contacts__text">приглашаем к сотрудничеству дилеров!</div>
+                <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+              </div>
+              <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A13a2f0036974af9748ecc1cc09b4ac4bb20397a60ede95c5658979c52b507596&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper"></div>
+      <img class="page-footer__logo" src="../source/img/footer-logo.svg" alt="Логотип" width="128" height="24">
+      <ul class="page-footer__social-networks">
+        <li><a href="#"><img src="../source/img/icon_vkontakte.svg" alt="Вконтакте" width="30" height="22"></a></li>
+        <li><a href="#"><img src="../source/img/icon_instagram.svg" alt="Инстаграмм" width="23" height="23"></a></li>
+        <li><a href="#"><img src="../source/img/icon_facebook.svg" alt="Фейсбук" width="28" height="33"></a></li>
+      </ul>
+      <div class="page-footer__academy">
+        <p>HTML Academy</p>
+        <img src="../source/img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+      </div>
+    </footer>
+  </body>
+</html>
