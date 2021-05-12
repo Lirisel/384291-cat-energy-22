@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/page-body.scss","blocks/product-item.scss"],"names":[],"mappings":"AAAA,WACE,cAAe,CACf,WAAY,CCFd,cACE,WAAY,CACZ,WAAY,CACZ,qBAAsB,CACtB,aAAc","file":"style.min.css","sourcesContent":[".page-body {\n  background: red;\n  width: 900px;\n}\n",".product-item {\n  width: 200px;\n  height: 50px;\n  background-color: blue;\n  display: block;\n}\n"]}
